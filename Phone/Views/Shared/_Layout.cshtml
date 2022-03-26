@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Css/Home.css"/ type="text/css" rel="stylesheet">
+    <link href="~/Css/Footer.css"  type="text/css" rel="stylesheet" />
+</head>
+<head>
+    <div class="header">
+        <section id="menu">
+            <div class="logo">
+                <span>
+                        <a style="text-decoration:none" href="https://localhost:44354" class="logo" to="/"> CELLPHONES </a>        
+                </span>
+            </div>
+
+            <div class="search">
+                    <form>
+                        <input type="text"
+                               name="search"
+                               placeholder="Bạn cần tìm gì ..."
+                               defaultValue={setSearch}
+                        ></input>
+                    </form>
+            </div>
+            <ul class="menu-list" id={menu ? "hidden" : "" }>
+                <li class="active">
+                    <a href="https://localhost:44354" class="hover"> Trang Chủ </a>
+                </li>
+                <li>
+                    <a class="hover" to="/product"> Sản Phẩm </a>
+                </li>
+                <li class="active">
+
+                    <a class="hover">Tài khoản </a>
+                </li>
+
+             
+
+            </ul>
+            <div class="bar" 
+                <span class="line"></span>
+                <span class="line"></span>
+                <span className="line"></span>
+            </div>
+        </section>
+    </div>
+  
+<div class="container body-content">
+    @RenderBody()
+    <hr />
+    <section id="footer">
+        <div class="footer">
+            <div class="footer-top">
+                <div class="footer-top-name">
+                    <h2>cellphones</h2>
+                </div>
+                <div class="footer-top-about">
+                    <h2>about</h2>
+                    <ul>
+                        <li>
+                            <a>Về Chúng Tôi</a>
+                        </li>
+                        <li>
+                            <a>Blog</a>
+                        </li>
+                        <li>
+                            <a>Cơ Hội Nghề Nghiệp</a>
+                        </li>
+                        <li>
+                            <a>Cửa Hàng</a>
+                        </li>
+                        <li>
+                            <a><img src="https://theme.hstatic.net/1000075078/1000610097/14/gov.png?v=664"></img></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top-sp">
+                    <h2>Always-on Support</h2>
+                    <p>Support 028.71.087.088 (07:00-21:00)</p>
+                    <p>Delivery 1800 6936 (07:00-21:00)</p>
+                </div>
+                <div class="footer-top-delivery">
+                    <h2>Delivery</h2>
+                    <ul>
+                        <li>
+                            <a>Shipping methods</a>
+                        </li>
+                        <li>
+                            <a>Payment</a>
+                        </li>
+                        <li>
+                            <a>Cash voucher</a>
+                        </li>
+                        <li>
+                            <a>Shipping methods</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div className="footer-bot">
+
+                <p>Copyright 1911066597-DangChauHoangKhang-19DTHD2.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+@*    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)*@
+</head>
+</html>
